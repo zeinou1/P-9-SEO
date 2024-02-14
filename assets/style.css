@@ -353,4 +353,21 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
+footer { 
+	background: #E5975F;
+	height: 25vh;
+	display: flex;
+}
+footer > ul {
+	width: 60%;
+	display: flex;
+    gap:1rem;
+	flex-direction: column;
+}
+footer > div {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+    
+}
 
