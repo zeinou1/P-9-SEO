@@ -10,13 +10,14 @@ body {
 .top-header {
   background-color: rgb(247, 246, 245);
   position: sticky;
-  top: 0;
+  top: -234px;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   padding-inline: 100px;
   padding-block: 30px;
   align-items: center;
+
 }
 
 .top-header .name {
@@ -367,17 +368,16 @@ footer {
   padding: 1rem;
 }
 footer h6 {
-	color: #ada8e4;
-	text-align: center;
-	text-transform: uppercase;
-	text-decoration: underline;
+  color: #f0eff4;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 
 .infos {
   width: 100%;
   display: flex;
   gap: 1rem;
- 
 }
 footer > div {
   width: 15%;
@@ -386,22 +386,22 @@ footer > div {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   background-color: #000000;
   text-align: center;
+  padding: 1rem;
 }
 .reseaux ul {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
-.reseaux p{ 
-	color: #e9d4d4;
-	text-transform: uppercase;
+.reseaux p {
+  color: #eeebeb;
+  text-transform: uppercase;
 }
-.social{
-	color: #e4e6ed;
-	text-transform: uppercase;
-
+.social {
+  color: #e4e6ed;
+  text-transform: uppercase;
 }
 .reseaux a {
   text-decoration: none;
@@ -411,81 +411,93 @@ footer > div {
   width: 20%;
   border-left: 1px solid rgb(8, 7, 7);
 
-  box-shadow: 12px 13px 55px rgb(112, 130, 112);
-  padding:1rem ;
+  box-shadow: 12px 13px 55px rgb(76, 201, 76);
+  padding: 1rem;
   color: #eeebeb;
   font-weight: 700;
   background-color: #000000;
+
 }
-  
+
 .horaire {
   width: 30%;
   border-left: 1px solid rgb(8, 7, 7);
 
-  box-shadow: 12px 13px 55px rgb(112, 130, 112);
-  padding:1rem ;
+  box-shadow: 12px 13px 55px rgb(65, 81, 43);
+  padding: 1rem;
   color: #eeebeb;
   background-color: #000000;
-
 }
 .adresse {
   width: 35%;
   border-left: 1px solid rgb(8, 7, 7);
-  box-shadow: 12px 13px 55px rgb(112, 130, 112);
+  box-shadow: 12px 13px 55px rgb(217, 157, 245);
   color: #eeebeb;
-  padding:1rem ;
+  padding: 1rem;
   background-color: #000000;
-
 }
 .contact {
-	position: fixed;
-	right: 1rem;
-	bottom: 2rem;
-	height: 200px;
-	width: 340px;
-	text-align: center;
-	background: linear-gradient(90deg, #808379, rgb(116, 73, 37));
-	border-radius: 56% 24% 30% 10% / 20% 85% 15% 80%;
-	box-shadow: 0 5px 10px black;
-	opacity: 0;
-	transform: translateX(400px);
-	transition: 1s ease-out;
-	z-index: 9999;
-  }
-  .contact p {
-	margin: 0 auto;
-	font-size: 1.2rem;
-	margin-top: 4rem;
-	text-transform: uppercase;
-	color: #ced1dd;
-  }
+  position: fixed;
+  right: 1rem;
+  bottom: 2rem;
+  height: 200px;
+  width: 340px;
+  text-align: center;
+  background: linear-gradient(90deg, #808379, rgb(116, 73, 37));
+  border-radius: 56% 24% 30% 10% / 20% 85% 15% 80%;
+  box-shadow: 0 5px 10px black;
+  opacity: 0;
+  transform: translateX(400px);
+  transition: 1s ease-out;
+  z-index: 9999;
+}
+.contact p {
+  margin: 0 auto;
+  font-size: 1.2rem;
+  margin-top: 4rem;
+  text-transform: uppercase;
+  color: #ced1dd;
+}
 
+fa-times-circle {
+  position: absolute;
+  left: 1rem;
+  top: 0.7rem;
 
-  fa-times-circle {
-	position: absolute;
-	left: 1rem;
-	top: 0.7rem;
-	
-	color: white;
-	text-shadow: 2px 2px 0px #e8dfdf;
-	cursor: pointer;
-	transition: 0.3s;
-	color: #e8dfdf;
-  }
-  #closeBtn{
-	color: #e8dfdf;
-	font-size: 1.7rem;
-  }
-  .fa-times-circle:hover {
-	color: rgb(211, 242, 251);
-	transform: translateX(-1px);
-  }
-  .fa-times-circle:active {
-	transform: scale(0.5);
-  }
-  .fa-twitter{
+  color: white;
+  text-shadow: 2px 2px 0px #e8dfdf;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #e8dfdf;
+}
+#closeBtn {
+  color: #e8dfdf;
+  font-size: 1.7rem;
+}
+.fa-times-circle:hover {
+  color: rgb(211, 242, 251);
+  transform: translateX(-1px);
+}
+.fa-times-circle:active {
+  transform: scale(0.5);
+}
+.fa-twitter {
   color: rgb(237, 237, 241);
+}
+.fa-facebook {
+  color: blue;
+}
+
+@media all and (max-width: 650px) {
+  .infos {
+    flex-direction: column;
   }
-  .fa-facebook{
-	color: blue;
+  .horaire,
+  .tel,
+  .adresse {
+    width: 100%;
   }
+  .reseaux> ul > li {
+	margin-left: .6rem;
+  }
+}
