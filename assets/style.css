@@ -102,7 +102,7 @@ body {
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
+  color: #100404;
   background-color: #beb45a;
   border-radius: 0;
 }
@@ -363,7 +363,7 @@ footer ul > li {
 }
 footer {
   width: 100%;
-  background: #0d0d0d;
+  background-color: #3c3d3d;
   padding: 1rem;
 }
 footer h6 {
@@ -374,7 +374,7 @@ footer h6 {
 }
 
 .infos {
-  width: 85%;
+  width: 100%;
   display: flex;
   gap: 1rem;
  
@@ -387,16 +387,22 @@ footer > div {
   flex-direction: column;
   gap: 0.6rem;
   text-decoration: underline;
+  background-color: #000000;
+  text-align: center;
 }
 .reseaux ul {
 	display: flex;
 	flex-wrap: wrap;
 }
-.reseaux p,span { 
-	color: #e4e6ed;
+.reseaux p{ 
+	color: #e9d4d4;
 	text-transform: uppercase;
 }
+.social{
+	color: #e4e6ed;
+	text-transform: uppercase;
 
+}
 .reseaux a {
   text-decoration: none;
   outline: none;
@@ -409,6 +415,7 @@ footer > div {
   padding:1rem ;
   color: #eeebeb;
   font-weight: 700;
+  background-color: #000000;
 }
   
 .horaire {
@@ -418,6 +425,8 @@ footer > div {
   box-shadow: 12px 13px 55px rgb(112, 130, 112);
   padding:1rem ;
   color: #eeebeb;
+  background-color: #000000;
+
 }
 .adresse {
   width: 35%;
@@ -425,6 +434,8 @@ footer > div {
   box-shadow: 12px 13px 55px rgb(112, 130, 112);
   color: #eeebeb;
   padding:1rem ;
+  background-color: #000000;
+
 }
 .contact {
 	position: fixed;
@@ -471,4 +482,10 @@ footer > div {
   }
   .fa-times-circle:active {
 	transform: scale(0.5);
+  }
+  .fa-twitter{
+  color: rgb(237, 237, 241);
+  }
+  .fa-facebook{
+	color: blue;
   }
