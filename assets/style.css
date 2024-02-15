@@ -357,3 +357,6 @@ input[type="submit"] {
     width: 80%;
   }
 }
+h6,h5{
+  font-size: 1em;
+}
